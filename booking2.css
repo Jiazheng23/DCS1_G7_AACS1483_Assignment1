@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+html{
+    background-color: rgb(244, 221, 188);
+    max-width: 1024px;
+    max-height: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    max-width: 1024px;
+    margin: 45px auto;
+    border: 5px solid;
+    border-color: rgb(68, 178, 0);
+    border-radius: 30px;
+    padding: 20px;  
+}
+
+
+header{
+    background: rgb(18, 90, 50); 
+    font-family: Times New Roman; 
+    height: 200px;
+    font-size: 20px;
+    margin-top: -1%;
+}
+
+@media(max-width: 768px){
+    header{
+        padding: 20px;
+    }
+}
+@media(max-height: 1024px){
+    header{
+        padding: 20px;
+    }
+}
+
+.logo{
+    position: fixed;
+    position: relative;
+    bottom: 130px;
+    right: 70px;
+}
+.paragraph-container{
+    z-index: -1;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: auto;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;;
+}
+
+.img1{
+    float: left;
+}
+.img2{
+    float: left;
+}
+
+button.signin,
+button.login{
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+    padding: 10px;
+}
+
+button.signin:hover,
+button.login:hover {background-color: #0c8f10}
+button:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+button{
+    text-align: center;
+    display: block; 
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 12px 28px;
+    border-radius: 8px;
+    background-color: rgba(108, 59, 255, 0.3);
+    color: white;
+}  
+
+input[type=text]{
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(68,178,0);
+    border-radius: 4px;
+    height: 50px;
+}
+
+input[type=text]:focus{
+    background-color: rgb(216, 216, 216);
+    color: rgb(0, 0, 0);
+}
+
+input.Search{
+    float: right;
+    font-size: 18px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+
+/*Navigation Bar*/
+nav{   
+    text-align: center;
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+}
+nav ul li{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.dropdown{
+    display: none;
+    border-radius: 10px;
+}
+.dropdown a{
+    color: rgb(255,255,255);
+    text-shadow: rgba(0,0,0,1)1px -1px 1px;
+    transform: scale(1,1) translateY(0px);
+    transition: all 0.3s linear; 
+}
+.dropdown a:hover {
+    text-shadow: rgba(0,0,0,0.5)0px 15px 4px;
+    transform: scale(3,3) translateY(-15px);
+ }
+.menu-bar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color: rgb(87, 134, 64);
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.menu-bar ul li:hover .dropdown ul{
+    display: block;
+    margin: 0px;
+    border-radius: 10px;
+}
+.menu-bar ul li:hover .dropdown ul li{
+    margin-top: 10px;
+    margin-left: -35px;
+    padding: 4px;
+    width: auto;
+    background-color: transparent;
+    text-align: left;
+}
+.menu-bar ul li:hover .dropdown ul li a:hover{
+    color: rgb(32, 78, 32);
+}
+
+/*Booking Form*/
+form,.faqs{
+    font-size: 18px;
+    width: 100%;
+}
+
+#faq-ans{
+    box-sizing: border-box;
+    border: 2px solid rgb(68, 178, 0);
+    border-radius: 4px;
+    height: 30px;
+}
+
+.faq-answer{
+    display: none;
+    margin: 0%;
+    float: left;
+}
+
+.paragraph-container {
+    position: absolute;
+    top: 70%; 
+    left: 60%; 
+    margin-right: 300px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border: 2px solid rgb(68, 178, 0);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    position: relative;
+    background-color: #eec0e8;
+    color: black;
+    width: 100%;
+    text-align: center;
+    bottom: -10px;
+    text-decoration: solid;
+    border: 2px solid black;
+}
+
+
+footer p{
+    color: black;
+}
+
+div#facebook{
+    position: absolute;
+    top: 10px;
+    left: -850px;
+}
+
+div#instragram{
+    position: absolute;
+    top: 50px;
+    left: -850px;
+    
+}
+
+div#messenger{
+    position: absolute;
+    top: 90px;
+    left: -850px;
+}
+
+   

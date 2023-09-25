@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+html{
+    background-color: rgb(244, 221, 188);
+    max-width: 1024px;
+    max-height: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.background{
+    max-width: 1024px;
+    min-width: 768px;
+    max-height: auto;
+    margin: 50px auto;
+    border: 5px solid;
+    border-color: rgb(68, 178, 0);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+header{
+    background: rgb(18, 90, 50); 
+    font-family: Times New Roman; 
+    height: 200px;
+    font-size: 20px;
+    margin-top: -1%;
+}
+@media(max-width: 768px){
+    header{
+        padding: 20px;
+    }
+}
+@media(max-height: 1024px){
+    header{
+        padding: 20px;
+    }
+}
+.logo{
+    position: fixed;
+    position: relative;
+    bottom: 130px;
+    right: 70px;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.img1{
+    float: left;
+}
+.img2{
+    float: left;
+}
+
+button{
+    
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+    padding: 10px;
+}
+button:hover {background-color: #0c8f10}
+button:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.button{
+    font-size: 25px;
+    padding: 12px 28px;
+    background-color: rgba(94, 230, 101, 0.618);
+    color: rgb(40, 14, 156);
+    border-radius: 8px;
+    text-decoration: none;
+    position: relative;
+    top: -10px;
+}
+
+.button:hover{
+    background-color: rgb(117, 79, 106);
+    color: white;
+    text-decoration: none;
+}
+input[type=text]{
+    float: right;
+    font-size: 18px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+
+
+body nav{   
+    text-align: center;
+}
+body nav ul{
+    display: inline-flex;
+    list-style: none;
+}
+body nav ul li{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+body .menu-bar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+body .dropdown{
+    display: none;
+    border-radius: 10px;
+}
+body .dropdown a{
+    color: rgb(255,255,255);
+    text-shadow: rgba(0,0,0,1)1px -1px 1px;
+    transform: scale(1,1) translateY(0px);
+    transition: all 0.3s linear; 
+}
+body .dropdown a:hover {
+    text-shadow: rgba(0,0,0,0.5)0px 15px 4px;
+    transform: scale(3,3) translateY(-15px);
+ }
+body .menu-bar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color: rgb(87, 134, 64);
+    margin-top: 5px;
+    margin-left: 5px;
+}
+body .menu-bar ul li:hover .dropdown ul{
+    display: block;
+    margin: 0px;
+    border-radius: 10px;
+}
+body .menu-bar ul li:hover .dropdown ul li{
+    margin-top: 10px;
+    margin-left: -35px;
+    padding: 4px;
+    width: auto;
+    background-color: transparent;
+    text-align: left;
+}
+body .menu-bar ul li:hover .dropdown ul li a:hover{
+    color: rgb(32, 78, 32);
+}
+
+p#body{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 25px;
+    z-index: -1;
+}
+  
+.container-form{
+    font-size: 20px; 
+    width: 100%;
+    height: 100%;
+}  
+
+input[type=number],input[type=date],input[type=time]{
+    width: 100;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(68, 178, 0);
+    border-radius: 4px;
+    height: 40px;
+  }
+
+#paxInput, #dateInput, #timeInput{
+    width: 15%;
+    padding: 5px;
+    margin: 5px;
+}
+
+footer{
+    border: 2px solid black;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    background-color: #eec0e8;
+    color: black;
+    width: 100%;
+    text-decoration: solid;
+}
+
+
+
+div#facebook{
+    position: absolute;
+    top: 10px;
+    left: -870px;
+}
+
+div#instragram{
+    position: absolute;
+    top: 50px;
+    left: -870px;
+    
+}
+
+div#messenger{
+    position: absolute;
+    top: 90px;
+    left: -870px;
+}
