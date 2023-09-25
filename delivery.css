@@ -1,0 +1,298 @@
+@charset "utf-8";
+html{
+    margin: auto;
+    max-width: 1024px;
+    max-height: 768px;
+    font-size: 14px;
+    background-image: url(background1.jpg);
+}
+
+header{
+    margin-top: -1%;
+    background: rgb(18, 90, 50); 
+    font-family: 'Times New Roman'; 
+    height: 200px;
+    font-size: 20px;
+
+}
+.logo{
+    position: fixed;
+    position: relative;
+    bottom: 80px;
+    right: 70px;
+
+}
+
+.img1{
+    float: left;
+}
+.img2{
+    float: left;
+}
+
+button{
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+    padding: 10px;
+}
+button:hover {
+    background-color: #0c8f10
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+input#Search[type=text]{
+    float: right;
+    font-size: 18px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+
+body nav{   
+    text-align: center;
+}
+
+body nav ul{
+    display: inline-flex;
+    list-style: none;
+}
+body nav ul li{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+body .menu-bar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+body .dropdown{
+    display: none;
+    border-radius: 10px;
+}
+body .dropdown a{
+    color: rgb(255,255,255);
+    text-shadow: rgba(0,0,0,1)1px -1px 1px;
+    transform: scale(1,1) translateY(0px);
+    transition: all 0.3s linear; 
+}
+body .dropdown a:hover {
+    text-shadow: rgba(0,0,0,0.5)0px 15px 4px;
+    transform: scale(3,3) translateY(-15px);
+ }
+body .menu-bar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color: rgb(87, 134, 64);
+    margin-top: 5px;
+    margin-left: 5px;
+}
+body .menu-bar ul li:hover .dropdown ul{
+    display: block;
+    margin: 0px;
+    border-radius: 10px;
+}
+body .menu-bar ul li:hover .dropdown ul li{
+    margin-top: 10px;
+    margin-left: -35px;
+    padding: 4px;
+    width: auto;
+    background-color: transparent;
+    text-align: left;
+}
+body .menu-bar ul li:hover .dropdown ul li a:hover{
+    color: rgb(32, 78, 32);
+}
+
+form#detail{
+    display:inline-block;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+}
+div.submit{
+    margin-left: 100px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    margin-top: 155px;
+    margin-bottom: 120px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+form#detail{
+    margin-top: 70px;
+}
+
+form#detail legend{
+    background-color: black;
+    color: white;
+    padding:10px;
+}
+
+div.formRow{
+    flex-flow: row wrap;
+    margin: 5px;
+    width: 750px;
+    font-size: 20px;
+}
+div.formRow #left{
+    float: left;
+    width: 50%;
+
+}
+div.formRow #right
+{
+    float: left;
+    width: 50%;
+}
+div.formRow label{
+    clear: both;
+    float: left;
+}
+
+div.formRow input{
+    clear: both;
+    float: left;
+    width: 250px;
+    height: 20px;
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    height: 40px;
+    width: 90px;
+    margin-top: 20px;
+    clear: left;
+    float: right;
+}
+
+
+footer{
+    border: 2px solid black;
+    position: relative;
+    background-color: #eec0e8;
+    color: black;
+    width: 100%;
+    text-align: center;
+    bottom: -10px;
+    text-decoration: solid;
+}
+
+
+div#facebook{
+    position: absolute;
+    top: 10px;
+    left: -870px;
+}
+
+div#instragram{
+    position: absolute;
+    top: 50px;
+    left: -870px;
+    
+}
+
+div#messenger{
+    position: absolute;
+    top: 90px;
+    left: -870px;
+}
